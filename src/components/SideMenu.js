@@ -6,6 +6,7 @@ const SideMenu = ({ sideMenuOpened, sideMenuToggle }) => {
         <div className={ sideMenuOpened ? 'sidemenu active' : 'sidemenu'}>
             <ul>
                 <SideMenuItem sideMenuToggle={sideMenuToggle} title='About' link='#about' />
+                <SideMenuItem sideMenuToggle={sideMenuToggle} title='Skills' link='#skills' />
                 <SideMenuItem sideMenuToggle={sideMenuToggle} title='Portfolio' link='#portfolio' />
                 <SideMenuItem sideMenuToggle={sideMenuToggle} title='Contact Me' link='#contact-me' />
             </ul>

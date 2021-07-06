@@ -1,5 +1,6 @@
 import Topnav from './components/Topnav'
 import About from './components/About'
+import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import ContactMe from './components/ContactMe'
 import SideMenu from './components/SideMenu'
@@ -16,6 +17,7 @@ function App() {
       <SideMenu sideMenuOpened={sideMenuOpened} sideMenuToggle={setSideMenuOpened} />
       <div className="content">
         <About />
+        <Skills />
         <Portfolio />
         <ContactMe />
       </div>

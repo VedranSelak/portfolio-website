@@ -19,10 +19,11 @@
     }
 
     .side-menu {
+        height: 20px;
         span {
             &:first-child {
                 background-color: white;
-                transform: rotate(57deg);
+                transform: rotate(40deg);
             }
 
             &:nth-child(2) {
@@ -31,7 +32,7 @@
 
             &:last-child {
                 background-color: white;
-                transform: rotate(-57deg);
+                transform: rotate(-40deg);
             }
         }
     }

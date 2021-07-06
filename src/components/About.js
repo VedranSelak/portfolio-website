@@ -31,7 +31,7 @@ const About = () => {
                     <p><span ref={paragraf}></span></p>
                 </div>
                 <div className='down-icon' href="#portfolio">
-                    <a href="#portfolio"><FaAngleDown /></a>
+                    <a href="#skills"><FaAngleDown /></a>
                 </div>
             </div>
         </div>

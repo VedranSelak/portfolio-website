@@ -1,0 +1,79 @@
+@import '../config.scss';
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: $primaryColor;
+
+    .wrapper {
+        padding: 0;
+        border: 0;
+        display: flex;
+        width: 60%;
+        height: 80%;
+        border: 1px solid black;
+        border-radius: 1rem;
+        background-color: #999999;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            flex: 0.333;
+            height: 100%;
+            background-color: white;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex: 0.331;
+            height: 100%;
+            background-color: white;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            flex: 0.333;
+            text-align: center;
+            height: 100%;
+            background-color: white;
+        }
+
+        .header-icon {
+            font-size: 4rem;
+            padding-top: 2rem;
+        }
+
+        h4 {
+            color: black;
+        }
+
+        h5 {
+            margin-bottom: 1rem;
+        }
+
+        .description{
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border: none;
+            color: #999999;
+        }
+
+        li {
+            padding: 0.3rem;
+            text-align: center;
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+
+    h1 {
+        padding-bottom: 2rem;
+    }
+}
