@@ -1,3 +1,96 @@
+@import '../config.scss';
+
 .about {
-    background-color: red;
+    display: flex;
+    background-color: white;
+}
+
+.left {
+    flex: 0.5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    flex: 0.5;
+    position: relative;
+    color: $primaryColor;
+
+    .wrapper {
+        width:90%;
+        height: 80%;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction:column; 
+        justify-content: center;
+        text-align: start;
+    }
+
+    .down-icon {
+        position: absolute;
+        font-size: 2rem;
+        bottom: 1rem;
+        left: 40%;
+    }
+
+    .down-icon a:hover {
+        color: #5999ff;
+        transition: all 0.5s;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        border-radius: 1rem;
+        
+        border: 1px solid black;
+        padding: 1rem;
+    }
+}
+
+.ityped-cursor {
+    font-size: 1rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+.container-img {
+    width: 40rem;
+    height: 40rem;
+    background-color: #5999ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: auto;
+}
+
+img {
+    height: 90%;
 }
