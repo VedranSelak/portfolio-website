@@ -2,7 +2,7 @@ import '../css/contactme.scss'
 
 const ContactMe = () => {
     return (
-        <div className="contact-me">
+        <div id='contact-me' className="contact-me">
             
         </div>
     )

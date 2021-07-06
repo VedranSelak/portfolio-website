@@ -1,4 +1,37 @@
+@import '../config.scss';
+
 .topnav {
-    background-color: rgb(29, 2, 151);
+    position: fixed;
+    background-color: white;
     height: 5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wrapper {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primaryColor;
+    text-decoration: none;
+}
+
+.text-red {
+    color: #c71233;
+}
+
+.text-blue {
+    color: #5999ff;
+}
+
+.text-yellow {
+    color: #c4a400;
 }

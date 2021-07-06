@@ -1,0 +1,21 @@
+.App {
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.content > * {
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    scroll-snap-align: start;
+}
