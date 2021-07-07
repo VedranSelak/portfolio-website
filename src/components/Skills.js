@@ -29,7 +29,7 @@ const Skills = () => {
                             <FaCss3Alt /> CSS
                         </li>
                         <li>
-                           <FaReact /> React
+                            <FaReact /> React
                         </li>
                         <li>
                             <SiJquery /> jQuery
