@@ -17,16 +17,7 @@
         display: flex;
 
         li {
-            font-size: 1rem;
-            margin-right: 0.5rem;
             margin-top: 0;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-
-            &.active {
-                background-color: $primaryColor;
-                color: white;
-            }
         }
     }
 
@@ -48,9 +39,26 @@
             align-items: center;
             justify-content: center;
 
-            h4 {
+            .about-project {
                 position: absolute;
-                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 1.5rem;
+
+                h4 {
+                    padding-bottom: 1rem;
+                }
+
+                .icon-container {
+                    display: flex;
+
+                    .icon {
+                        padding: 0 1rem;
+                    }
+                }
+
             }
 
             img {
@@ -63,6 +71,26 @@
                 object-fit: none;
                 height: 100%;
                 width: 1rem;
+            }
+
+            &:hover {
+                background-color: #5999ff;
+                cursor: pointer;
+
+                .icon {
+                    z-index: 3;
+                    color: black;
+                }
+
+                .icon:hover {
+                    color: white;
+
+                }
+
+                img {
+                    opacity: 0.3;
+                    z-index: 0;
+                }
             }
         }
     }
