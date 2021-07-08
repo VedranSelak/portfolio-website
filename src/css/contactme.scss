@@ -2,74 +2,96 @@
 
 .contact-me {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-self: center;
     background-image: url("../cool-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    position: relative;
 
-    .container {
+    .wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 50%;
-        height: 70%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
 
-        h3 {
-            padding: 2rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-        }
-
-        form {
+        .container {
             display: flex;
-            width: 70%;
-            height: 70%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 50%;
+            height: 100%;
 
-            textarea {
-                width: 60%;
-                height: 10rem;
-                margin: 1rem 0;
-                resize: none;
-                border-radius: 0.5rem;
-                padding: 0.5rem;
-                border: 1px solid $primaryColor;
+            h3 {
+                padding: 2rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: white;
+                overflow: hidden;
+            }
 
-                &:focus {
-                    outline: none;
+            form {
+                display: flex;
+                width: 70%;
+                height: 90%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+
+                textarea {
+                    width: 60%;
+                    height: 10rem;
+                    margin: 1rem 0;
+                    resize: none;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    border: 1px solid $primaryColor;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                input {
+                    width: 60%;
+                    height: 2rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid $primaryColor;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+                    height: 2rem;
+                    width: 30%;
+                    background-color: #0072d6;
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 17px;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: black;
+                        border: 2px solid black;
+                    }
                 }
             }
 
-            input {
-                width: 60%;
-                height: 2rem;
-                border-radius: 0.5rem;
-                border: 1px solid $primaryColor;
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            button {
-                height: 2rem;
-                width: 30%;
-                background-color: #0072d6;
-                border: none;
-                border-radius: 0.5rem;
-                font-size: 17px;
+            .alert {
+                margin-top: 1rem;
+                background-color: #00ff76;
+                padding: 0.3rem;
+                border-radius: 10px;
                 color: white;
                 font-weight: bold;
-                cursor: pointer;
-
-                &:hover {
-                    color: black;
-                    border: 2px solid black;
-                }
+                overflow: hidden;
             }
         }
     }
