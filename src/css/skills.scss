@@ -81,6 +81,10 @@
             @include minmobile {
                 font-size: 1rem;
             }
+
+            @include xsmobile {
+                font-size: 0.7rem;
+            }
         }
 
         h5 {

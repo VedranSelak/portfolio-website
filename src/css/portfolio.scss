@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: white;
     overflow: hidden;
     
@@ -38,7 +39,7 @@
             }
 
             @include xsmobile {
-                font-size: 2.4vw;
+                font-size: 2vw;
             }
         }
     }
@@ -88,7 +89,8 @@
             }
 
             @include xsmobile {
-                width: 39vw;
+                height: 13vh;
+                width: 38vw;
             }
         
 
