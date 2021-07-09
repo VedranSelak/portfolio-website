@@ -22,6 +22,15 @@
             width: 90%;
         }
 
+        @include mobile {
+            height: 60%;
+        }
+
+        @include minmobile {
+            width: 97%;
+            height: 70%;
+        }
+
         .left-skill {
             display: flex;
             text-align: center;
@@ -54,6 +63,10 @@
             font-size: 5vw;
             padding-top: 2vw;
             overflow: hidden;
+
+            @include minmobile {
+                font-size: 3rem;
+            }
         }
 
         .skill-header {
@@ -63,6 +76,10 @@
 
             @include tablet {
                 font-size: 2vw;
+            }
+
+            @include minmobile {
+                font-size: 1rem;
             }
         }
 
@@ -81,6 +98,11 @@
             @include tablet {
                 font-size: 1.8vw;
             }
+
+            @include minmobile {
+                font-size: 0.7rem;
+                margin-bottom: 0.5rem;
+            }
         }
 
         li {
@@ -91,6 +113,10 @@
 
             @include tablet {
                 font-size: 1.7vw;
+            }
+
+            @include minmobile {
+                font-size: 0.8rem;
             }
         }
     }

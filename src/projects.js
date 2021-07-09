@@ -1,7 +1,7 @@
 export const allPortfolio = [
     {
       id: 1,
-      title: "askIbu Web App",
+      title: "askIbu",
       img: "./images/askIbuPic.PNG",
       github: "https://github.com/VedranSelak/askibu",
       web: "https://askibu.selak.me",

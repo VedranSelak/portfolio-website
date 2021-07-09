@@ -30,12 +30,21 @@
                 width: 70%;
             }
 
+            @include mobile {
+                width: 100%;
+            }
+
             h3 {
                 padding: 2rem;
                 font-size: 1.5rem;
                 font-weight: bold;
                 color: white;
                 overflow: hidden;
+
+                
+                @include mobile {
+                    padding: 1rem;
+                }
             }
 
             form {
@@ -48,6 +57,10 @@
 
                 @include tablet {
                     width: 90%;
+                }
+
+                @include mobile {
+                    width: 100%;
                 }
 
                 textarea {

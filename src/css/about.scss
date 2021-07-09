@@ -3,6 +3,10 @@
 .about {
     display: flex;
     background-color: white;
+    
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .left {
@@ -48,12 +52,20 @@
         @include tablet {
             font-size: 2rem;
         }
+
+        @include minmobile {
+            font-size: 1.7rem;
+        }
     }
 
     p {
         border-radius: 1rem;
         border: 1px solid black;
         padding: 1rem;
+
+        @include minmobile {
+            font-size: 0.9rem;
+        }
     }
 }
 
@@ -94,6 +106,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
+    @include mobile {
+        width: 65%;
+    }
 }
 
 img {

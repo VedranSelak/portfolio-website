@@ -20,6 +20,10 @@
         li {
             font-size: 1rem;
             margin-top: 0;
+
+            @include mobile {
+                font-size: 2.5vw;
+            }
         }
     }
 
@@ -57,6 +61,12 @@
                 height: 18vh;
                 width: 30vw;
             }
+
+            @include mobile {
+                height: 18vh;
+                width: 40vw;
+            }
+        
 
             .about-project {
                 position: absolute;
