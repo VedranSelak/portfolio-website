@@ -30,6 +30,11 @@
         flex-direction:column; 
         justify-content: center;
         text-align: start;
+
+        @include xsmobile {
+            padding: 0.5rem;
+            width: 98%;
+        }
     }
 
     .down-icon {
@@ -65,6 +70,12 @@
 
         @include minmobile {
             font-size: 0.9rem;
+        }
+
+        @include xsmobile {
+            padding: 0.5rem;
+            margin-right: 1rem;
+            font-size: 0.7rem;
         }
     }
 }
@@ -109,6 +120,10 @@
 
     @include mobile {
         width: 65%;
+    }
+
+    @include xsmobile {
+        width: 85%;
     }
 }
 

@@ -100,8 +100,12 @@
             }
 
             @include minmobile {
-                font-size: 0.7rem;
+                font-size: 0.6rem;
                 margin-bottom: 0.5rem;
+            }
+
+            @include xsmobile {
+                font-size: 0.55rem;
             }
         }
 
@@ -117,6 +121,10 @@
 
             @include minmobile {
                 font-size: 0.8rem;
+            }
+
+            @include xsmobile {
+                font-size: 0.6rem;
             }
         }
     }

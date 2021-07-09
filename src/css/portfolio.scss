@@ -9,6 +9,10 @@
     
     h1{
         font-size: 3vw;
+
+        @include minmobile {
+            font-size: 6vw;
+        }
     }
 
     ul {
@@ -17,12 +21,24 @@
         list-style: none;
         display: flex;
 
+        @include minmobile {
+            margin: 1rem 0;
+        }
+
         li {
             font-size: 1rem;
             margin-top: 0;
 
             @include mobile {
                 font-size: 2.5vw;
+            }
+
+            @include minmobile {
+                font-size: 2.5vw;
+            }
+
+            @include xsmobile {
+                font-size: 2.4vw;
             }
         }
     }
@@ -66,6 +82,14 @@
                 height: 18vh;
                 width: 40vw;
             }
+
+            @include minmobile {
+                height: 15vh;
+            }
+
+            @include xsmobile {
+                width: 39vw;
+            }
         
 
             .about-project {
@@ -78,6 +102,10 @@
 
                 h4 {
                     padding-bottom: 1rem;
+
+                    @include minmobile {
+                        font-size: 1rem;
+                    }
                 }
 
                 .icon-container {

@@ -4,6 +4,7 @@ $tabletWidth: 1124px;
 $minTabletWidth: 850px;
 $mobile: 650px;
 $minMobile: 450px;
+$xsMobile: 370px;
 
 @mixin mintablet {
     @media (max-width: #{$minTabletWidth}) {
@@ -19,6 +20,12 @@ $minMobile: 450px;
 
 @mixin minmobile {
     @media (max-width: #{$minMobile}) {
+        @content
+    }
+}
+
+@mixin xsmobile {
+    @media (max-width: #{$xsMobile}) {
         @content
     }
 }
