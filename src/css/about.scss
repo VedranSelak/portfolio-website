@@ -10,6 +10,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .right {
@@ -43,6 +44,10 @@
         width: 100%;
         font-size: 2.5rem;
         padding-bottom: 1rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
     }
 
     p {
@@ -80,16 +85,17 @@
 }
 
 .container-img {
-    width: 40rem;
-    height: 40rem;
+    width: 90%;
+    height: auto;
     background-color: #5999ff;
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 30%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin: auto;
 }
 
 img {
-    height: 90%;
+    width: 80%;
 }

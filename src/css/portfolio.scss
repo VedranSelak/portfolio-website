@@ -5,9 +5,10 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
+    overflow: hidden;
     
     h1{
-        font-size: 3rem;
+        font-size: 3vw;
     }
 
     ul {
@@ -17,6 +18,7 @@
         display: flex;
 
         li {
+            font-size: 1rem;
             margin-top: 0;
         }
     }
@@ -28,16 +30,33 @@
         justify-content: center;
         flex-wrap: wrap;
 
+        @include tablet {
+            width: 90%;
+        }
+
+        @include mintablet {
+            width: 100%;
+        }
+
         .item {
             position: relative;
-            height: 10rem;
-            width: 20rem;
+            height: 25vh;
+            width: 20vw;
             border-radius: 0.5rem;
             border: 1px solid black;
             margin: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include tablet {
+                width: 25vw;
+            }
+
+            @include mintablet {
+                height: 18vh;
+                width: 30vw;
+            }
 
             .about-project {
                 position: absolute;

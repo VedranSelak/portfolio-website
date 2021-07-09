@@ -26,6 +26,10 @@
             width: 50%;
             height: 100%;
 
+            @include tablet {
+                width: 70%;
+            }
+
             h3 {
                 padding: 2rem;
                 font-size: 1.5rem;
@@ -41,6 +45,10 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-start;
+
+                @include tablet {
+                    width: 90%;
+                }
 
                 textarea {
                     width: 60%;

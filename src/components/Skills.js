@@ -11,11 +11,11 @@ const Skills = () => {
         <div id='skills' className='skills'>
             <h1>My skill set</h1>
             <div className='wrapper'>
-                <div className="left">
+                <div className="left-skill">
                     <div className="header-icon">
                         <FaCode />
                     </div>
-                    <h4>Front-End Development</h4>
+                    <h4 className='skill-header'>Front-End Development</h4>
                     <p className='description'>I love coding something from scratch, and the process of developing something brings me joy.</p>
                     <h5>Languages I use:</h5>
                     <ul>
@@ -40,7 +40,7 @@ const Skills = () => {
                     <div className="header-icon">
                         <FaDatabase />
                     </div>
-                    <h4>Back-End Development</h4>
+                    <h4 className='skill-header'>Back-End Development</h4>
                     <p className='description'>I value back-end development because it is the backbone of the application that I am building.</p>
                     <h5>Tools I use:</h5>
                     <ul>
@@ -59,7 +59,7 @@ const Skills = () => {
                     <div className="header-icon">
                         <FaAndroid />
                     </div>
-                    <h4>Mobile Development</h4>
+                    <h4 className='skill-header'>Mobile Development</h4>
                     <p className='description'>I like building mobile apps because they are a great way to interact with a larger audience.</p>
                     <h5>Tools I use:</h5>
                     <ul>

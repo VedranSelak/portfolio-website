@@ -18,12 +18,18 @@
         border-radius: 1rem;
         background-color: #999999;
 
-        .left {
+        @include tablet {
+            width: 90%;
+        }
+
+        .left-skill {
             display: flex;
+            text-align: center;
             flex-direction: column;
             flex: 0.333;
             height: 100%;
             background-color: white;
+            overflow: hidden;
         }
 
         .center {
@@ -45,12 +51,19 @@
         }
 
         .header-icon {
-            font-size: 4rem;
-            padding-top: 2rem;
+            font-size: 5vw;
+            padding-top: 2vw;
+            overflow: hidden;
         }
 
-        h4 {
+        .skill-header {
+            font-size: 1vw;
+            text-align: center;
             color: black;
+
+            @include tablet {
+                font-size: 2vw;
+            }
         }
 
         h5 {
@@ -59,17 +72,26 @@
 
         .description{
             text-align: center;
+            font-size: 1vw;
             padding: 1rem;
             margin-bottom: 2rem;
             border: none;
             color: #999999;
+
+            @include tablet {
+                font-size: 1.8vw;
+            }
         }
 
         li {
             padding: 0.3rem;
             text-align: center;
-            font-size: 1rem;
+            font-size: 1vw;
             margin: 0;
+
+            @include tablet {
+                font-size: 1.7vw;
+            }
         }
     }
 

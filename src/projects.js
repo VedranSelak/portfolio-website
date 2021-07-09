@@ -11,7 +11,7 @@ export const allPortfolio = [
         title: "Portfolio",
         img: "./images/portfolioPic.PNG",
         github: "https://github.com/VedranSelak/portfolio-website",
-        web: "https://vedran.selak.me",
+        web: "https://unruffled-hermann-8020e9.netlify.app",
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export const allPortfolio = [
     },
     {
         id: 6,
-        title: "Simple shell in C",
+        title: "Shell in C",
         img: "./images/cScript.PNG",
         github: "https://github.com/VedranSelak/simple-shell",
         web: "",
@@ -59,7 +59,7 @@ export const allPortfolio = [
         title: "Portfolio",
         img: "./images/portfolioPic.PNG",
         github: "https://github.com/VedranSelak/portfolio-website",
-        web: "https://vedran.selak.me",
+        web: "https://unruffled-hermann-8020e9.netlify.app",
     },
   ];
   
@@ -90,7 +90,7 @@ export const allPortfolio = [
     },
     {
         id: 3,
-        title: "Simple shell in C",
+        title: "Shell in C",
         img: "./images/cScript.PNG",
         github: "https://github.com/VedranSelak/simple-shell",
         web: "",
