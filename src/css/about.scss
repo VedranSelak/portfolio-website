@@ -7,75 +7,120 @@
     @include mobile {
         flex-direction: column;
     }
-}
 
-.left {
-    flex: 0.5;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right {
-    flex: 0.5;
-    position: relative;
-    color: $primaryColor;
-
-    .wrapper {
-        width:90%;
-        height: 80%;
-        padding-left: 2rem;
+    .left {
+        flex: 0.5;
+        overflow: hidden;
         display: flex;
-        flex-direction:column; 
+        align-items: center;
         justify-content: center;
-        text-align: start;
 
-        @include xsmobile {
-            padding: 0.5rem;
-            width: 98%;
+        .container-img {
+            width: 90%;
+            height: auto;
+            background-color: #5999ff;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 30%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            img {
+                width: 80%;
+            }
+        
+            @include mobile {
+                width: 65%;
+            }
+        
+            @include xsmobile {
+                width: 85%;
+            }
         }
     }
 
-    .down-icon {
-        position: absolute;
-        font-size: 2rem;
-        bottom: 1rem;
-        left: 40%;
-    }
+    .right {
+        flex: 0.5;
+        position: relative;
+        color: $primaryColor;
+    
+        .wrapper {
+            width:90%;
+            height: 80%;
+            padding-left: 2rem;
+            display: flex;
+            flex-direction:column; 
+            justify-content: center;
+            text-align: start;
 
-    .down-icon a:hover {
-        color: #5999ff;
-        transition: all 0.5s;
-    }
+            .resume-btn {
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                padding: 5px;
+                width: 90px;
+                margin: 1rem auto;
+                background-color: #5999ff;
+                border-radius: 10px;
+                text-decoration: none;
 
-    h2 {
-        width: 100%;
-        font-size: 2.5rem;
-        padding-bottom: 1rem;
-
-        @include tablet {
+                &:hover {
+                    background-color: lighten(#5999ff, 10%);
+                    cursor: pointer;
+                }
+            }
+    
+            @include xsmobile {
+                padding: 0.5rem;
+                width: 98%;
+            }
+        }
+    
+        .down-icon {
+            position: absolute;
             font-size: 2rem;
+            bottom: 1rem;
+            left: 40%;
         }
-
-        @include minmobile {
-            font-size: 1.7rem;
+    
+        .down-icon a:hover {
+            color: #5999ff;
+            transition: all 0.5s;
         }
-    }
-
-    p {
-        border-radius: 1rem;
-        border: 1px solid black;
-        padding: 1rem;
-
-        @include minmobile {
-            font-size: 0.9rem;
+    
+        h2 {
+            width: 100%;
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+    
+            @include tablet {
+                font-size: 2rem;
+            }
+    
+            @include minmobile {
+                font-size: 1.7rem;
+            }
         }
+    
+        p {
+            border-radius: 1rem;
+            border: 1px solid black;
+            padding: 1rem;
 
-        @include xsmobile {
-            padding: 0.5rem;
-            margin-right: 1rem;
-            font-size: 0.7rem;
+            @include mobile {
+                font-size: 0.9rem;
+            }
+    
+            @include minmobile {
+                font-size: 0.8rem;
+            }
+    
+            @include xsmobile {
+                padding: 0.5rem;
+                margin-right: 1rem;
+                font-size: 0.7rem;
+            }
         }
     }
 }
@@ -105,28 +150,4 @@
     100% {
         opacity: 0;
     }
-}
-
-.container-img {
-    width: 90%;
-    height: auto;
-    background-color: #5999ff;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 30%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    @include mobile {
-        width: 65%;
-    }
-
-    @include xsmobile {
-        width: 85%;
-    }
-}
-
-img {
-    width: 80%;
 }

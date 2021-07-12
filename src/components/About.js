@@ -1,5 +1,5 @@
 import '../css/about.scss'
-import { FaAngleDown } from 'react-icons/fa'
+import { FaAngleDown, FaDownload } from 'react-icons/fa'
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
 
@@ -29,6 +29,7 @@ const About = () => {
                 <div className="wrapper">
                     <h2>Hi, I am Vedran Selak</h2>
                     <p><span ref={paragraf}></span></p>
+                    <a href='VedranSelakResume.pdf' className='resume-btn' download><FaDownload /> Resume</a>
                 </div>
                 <div className='down-icon' href="#portfolio">
                     <a href="#skills"><FaAngleDown /></a>
