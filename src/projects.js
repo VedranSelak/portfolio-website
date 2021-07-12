@@ -16,7 +16,7 @@ export const allPortfolio = [
     {
         id: 3,
         title: "tutorMe",
-        img: "./images/tutorMePic.PNG",
+        img: "./images/tutorMePic.jpg",
         github: "https://github.com/VedranSelak/tutorMe",
         web: "",
     },
@@ -67,7 +67,7 @@ export const allPortfolio = [
     {
         id: 1,
         title: "tutorMe",
-        img: "./images/tutorMePic.PNG",
+        img: "./images/tutorMePic.jpg",
         github: "https://github.com/VedranSelak/tutorMe",
         web: "",
     },

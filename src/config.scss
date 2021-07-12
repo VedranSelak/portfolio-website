@@ -4,34 +4,34 @@ $tabletWidth: 1124px;
 $minTabletWidth: 850px;
 $mobile: 650px;
 $minMobile: 450px;
-$xsMobile: 370px;
+$xsMobile: 380px;
 
 @mixin mintablet {
     @media (max-width: #{$minTabletWidth}) {
         @content
     }
-}
+};
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
         @content
     }
-}
+};
 
 @mixin minmobile {
     @media (max-width: #{$minMobile}) {
         @content
     }
-}
+};
 
 @mixin xsmobile {
     @media (max-width: #{$xsMobile}) {
         @content
     }
-}
+};
 
 @mixin tablet {
     @media (max-width: #{$tabletWidth}) {
         @content
     }
-}
+};

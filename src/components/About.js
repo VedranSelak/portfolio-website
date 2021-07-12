@@ -14,7 +14,7 @@ const About = () => {
             loop: false,
             typeSpeed:  50,
             startDelay: 0,
-            strings: ["I am a, hardworking, second year student at the International Burch University. I love developing web applications and websites. I am always eager to learn new skills and improve as a developer."]
+            strings: ["I am a, hard-working, third year student at the International Burch University. I love developing web applications and websites. I am always eager to learn new skills and improve as a developer."]
         })
     }, [])
 
