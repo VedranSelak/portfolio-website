@@ -1,5 +1,5 @@
 import '../css/skills.scss'
-import { FaCode, FaDatabase, FaAndroid, FaHtml5, FaJsSquare, FaCss3Alt, FaReact, FaPhp, FaJava } from 'react-icons/fa'
+import { FaCode, FaDatabase, FaAndroid, FaHtml5, FaJsSquare, FaCss3Alt, FaReact, FaPhp, FaJava, FaBootstrap, FaSass } from 'react-icons/fa'
 import { SiJquery, SiAndroidstudio } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 
@@ -17,7 +17,7 @@ const Skills = () => {
                     </div>
                     <h4 className='skill-header'>Front-End Development</h4>
                     <p className='description'>I love coding something from scratch, and the process of developing something brings me joy.</p>
-                    <h5>Languages I use:</h5>
+                    <h5>Tools I use:</h5>
                     <ul>
                         <li>
                             <FaHtml5 /> HTML
@@ -33,6 +33,12 @@ const Skills = () => {
                         </li>
                         <li>
                             <SiJquery /> jQuery
+                        </li>
+                        <li>
+                            <FaBootstrap /> Bootstrap
+                        </li>
+                        <li>
+                            <FaSass /> Sass
                         </li>
                     </ul>
                 </div>

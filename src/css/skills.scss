@@ -95,12 +95,20 @@
             text-align: center;
             font-size: 1vw;
             padding: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 0rem;
             border: none;
             color: #999999;
 
             @include tablet {
-                font-size: 1.8vw;
+                font-size: 1.5vw;
+            }
+
+            @include mintablet {
+                font-size: 2vw;
+            }
+
+            @include mobile {
+                font-size: 0.5rem;
             }
 
             @include minmobile {
@@ -120,11 +128,19 @@
             margin: 0;
 
             @include tablet {
-                font-size: 1.7vw;
+                font-size: 1.5vw;
+            }
+
+            @include mintablet {
+                font-size: 1rem;
+            }
+
+            @include mobile {
+                font-size: 0.7rem;
             }
 
             @include minmobile {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
 
             @include xsmobile {
